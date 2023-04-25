@@ -1,0 +1,175 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 REM = 10px */
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* Selectores globales */
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+    color: #704dff;
+    transition: font-size .3s ease-out;
+}
+
+a:hover{
+    font-size: 1.4rem;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/* Contenedor de la página web */
+.contenedor{
+    max-width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+/* Cifrar */
+.cifrar{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 4rem;
+    align-items: center;
+}
+
+.cifrar img{
+    width: 24rem;
+}
+
+.eslogan{
+    margin: 1rem 0 2rem 0;
+    text-align: center;
+}
+
+.terminos{
+    background-color: #704dff;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border: .1rem solid black;
+}
+
+.terminos p{
+    padding-left: 1rem;
+    font-size: 1.4rem;
+    color:white;
+}
+
+.area-texto{
+    width: 100%;
+    border: .1rem solid black;
+    padding: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.6rem;
+    color: #874dff;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    line-height: 2;
+    height: 30rem;
+}
+
+.area-texto:focus{
+    outline: none;
+}
+
+.botones{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+}
+
+.btn-cifrar{
+    background-color: #704dff;
+    color: white;
+    font-weight: 700;
+    padding: 1rem;
+    transition: background-color .3s ease-out;
+    text-align: center;
+    margin:auto;
+    border: .1rem solid black;
+    border-radius: 1rem;
+    width: 10rem;
+}
+
+.btn-cifrar:hover{
+    background-color: #3b2a93;
+    cursor: pointer;
+}
+
+.btn-descifrar{
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    padding: 1rem;
+    transition: background-color .3s ease-out;
+    text-align: center;
+    margin:auto;
+    border: .1rem solid black;
+    border-radius: 1rem;
+    width: 10rem;
+}
+
+.btn-descifrar:hover{
+    background-color: #e1e1e1;
+    cursor: pointer;
+}
+
+/* Mensajes */
+.mensajes{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 4rem;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #3e2ea5, #5141bd);
+}
+
+.mensajes img{
+    height: 45rem;
+}
+
+.mensaje{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+}
+
+.mensaje p{
+    color: white;
+}
+
+.mensaje .title{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.mensaje .descripcion{
+    font-weight: 400;
+}
+
+/* Footer */
+footer{
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}

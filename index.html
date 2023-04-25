@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔐Cifrador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Contenedor Principal -->
+    <div class="contenedor">
+        <!-- Contenedor para la sección de cifrado -->
+        <div class="cifrar">
+            <div class="alura">
+                <img src="img/aluralogo.png" alt="alura + oracle logo">
+                <p class="eslogan">Sumérgete en tecnología!</p>
+            </div>
+            <div class="terminos">
+                <p>⚠️Solo minúsculas y sin acentos</p>
+            </div>
+            <textarea name="texto" class="area-texto" id="texto" cols="10" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="botones">
+                <input class="btn-cifrar" type="button" value="Cifrar" onclick="cifrar()">
+                <input class="btn-descifrar" type="button" value="Descifrar" onclick="descifrar()">
+            </div>
+            <footer>
+                <a href="https://github.com/chow-chow">Hecho por Leonardo Cruz - 2023.©</a>
+                <p>Imágenes de pch.vector, storyset y vectorjuice en Freepik.©</p>
+            </footer>
+        </div>
+
+        <!-- Contenedor para la sección de mensajes -->
+        <div class="mensajes">
+            <div class="imagen">
+                <img id="img-message" src="img/secure.png" alt="Buscando mensaje...">
+            </div>
+            <div class="mensaje">
+                <p class="title" id="titulo">Ningún mensaje fue encontrado!</p>
+                <p class="descripcion" id="desc">Ingresa el texto que desees cifrar o descifrar</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/cipher.js"></script>
+</body>
+</html>
